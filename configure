@@ -2,7 +2,7 @@
 
 # Parse the arguments...
 
-INSTALL_DIR=~/.lc3
+INSTALL_DIR=$HOME/.lc3
 case $1 in 
 	--installdir) 
 	    INSTALL_DIR=$2 ;
