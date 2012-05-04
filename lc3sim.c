@@ -632,10 +632,10 @@ init_machine ()
     clear_all_breakpoints ();
 
     REG (R_PC) = 0x0200;
-    if (read_obj_file ((unsigned char*)(INSTALL_DIR "/lc3os.obj"), &os_start, &os_end) == -1)
+    if (read_obj_file ((unsigned char*)(INSTALL_DIR "/lc3os/lc3os.obj"), &os_start, &os_end) == -1)
         puts ("failed to read LC-3 OS code");
     else {
-      if (read_sym_file ((unsigned char*)(INSTALL_DIR "/lc3os.sym")) == -1)
+      if (read_sym_file ((unsigned char*)(INSTALL_DIR "/lc3os/lc3os.sym")) == -1)
 	    puts ("failed to read LC-3 OS symbols");
 	if (gui_mode) /* load new code into GUI display */
 	    disassemble (os_start, os_end);

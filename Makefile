@@ -70,13 +70,14 @@ distclean: clean clear
 	${RM} -f Makefile
 
 install: ALL
-	${MKDIR} -p ${INSTALL_DIR}
-	-${CP} -f lc3as${EXE} lc3convert${EXE} lc3sim${EXE} lc3os.obj \
-		lc3os.sym lc3sim-tk ${INSTALL_DIR}
+	${MKDIR} -p ${INSTALL_DIR} ${INSTALL_DIR}/lc3os
+
+	-${CP} -f lc3as${EXE} lc3convert${EXE} lc3sim${EXE} lc3sim-tk ${INSTALL_DIR}
+	-${CP} -f lc3os.obj lc3os.sym ${INSTALL_DIR}/os/
 	${CHMOD} 555 ${INSTALL_DIR}/lc3as${EXE} \
 		${INSTALL_DIR}/lc3convert${EXE} ${INSTALL_DIR}/lc3sim${EXE} \
 		${INSTALL_DIR}/lc3sim-tk
-	${CHMOD} 444 ${INSTALL_DIR}/lc3os.obj ${INSTALL_DIR}/lc3os.sym
+	${CHMOD} 444 ${INSTALL_DIR}/lc3os/lc3os.obj ${INSTALL_DIR}/lc3os/lc3os.sym
 
 %.o: %.c
 	${GCC} -c ${CFLAGS} -o $@ $<
