@@ -1,6 +1,9 @@
------------------------------
-   DESCRIPTION OF CONTENTS
------------------------------
+LC3 Tools
+=========
+This is a cleaned-up version of the LC-3 tools which has been modified slightly to install to `~/.lc3`, so it can be used alongside the [LCC-LC3 C Compiler](https://github.com/haplesshero13/lcc-lc3).
+
+
+## Description of Contents
 
 The LC-3 tools package contains the lc3as assembler, the lc3sim simulator,
 and lc3sim-tk, a Tcl/Tk-based GUI frontend to the simulator.  All tools,
@@ -22,9 +25,7 @@ distributed with the tools).
 
 
 
----------------------
-   NECESSARY TOOLS
----------------------
+## Necessary Tools
 
 Installation requires versions of gcc (the Gnu C compiler),
 flex (Gnu's version of lex), and wish (the Tcl/Tk graphical shell).
@@ -51,28 +52,22 @@ had time to investigate.
 
 
 
--------------------------------
-   INSTALLATION INSTRUCTIONS
--------------------------------
+## Installation Instructions
 
 The LC-3 tools package is designed to work as either a personal or 
 administrative installation on various flavors of Unix, including
 Windows NT-based systems with appropriate support (e.g., Cygwin).
 
 First, decide where the binaries and LC-3 OS code should be installed.
-    * If you want it in the directory in which you unpacked the code,
-      simply type "configure."
-    * If you want it in a different directory, say /usr/bin, type
-      configure --installdir /usr/bin
-      replacing /usr/bin with the desired directory.
 
-Then type 'make'.
+* If you want it in the ~/.lc3 directory, type `configure`.
+* If you want it in a different directory, say `/usr/bin`, type `configure --installdir` `/usr/bin` replacing `/usr/bin` with the desired directory.
 
-If you want to make the tools available to other people, next type
-'make install'.  If not, don't.
+Then type `make install`.
 
-Please send any comments or bug reports to me at lumetta@uiuc.edu.
-Unfortunately, due to the volume of e-mail that I receive on a regular
-basis, I cannot guarantee that I will respond to your mail, but
-I will almost definitely read it.
+## Maintainers
+* Sean Smith (Dartmouth College)
+* Avery Yen
 
+## Original Author
+* Steven S. Lumetta (lumetta@uiuc.edu).
