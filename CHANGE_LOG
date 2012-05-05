@@ -1,3 +1,8 @@
+5  May 2012
+    Modified Makefile.def and configure to automatically install to `~/.lc3`.
+    Additionally, the lc3os and symbol tables now get installed to `~/.lc3/lc3os/`.
+    Also, `make install` now only installs executables.
+
 12 February 2004 (version 0.9)
 	fixed processing of hex input without leading "x" in lc3convert
 	eliminated warnings for use of strlen as field width when

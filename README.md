@@ -2,6 +2,14 @@ LC3 Tools
 =========
 This is a cleaned-up version of the LC-3 tools which has been modified slightly to install to `~/.lc3`, so it can be used alongside the [LCC-LC3 C Compiler](https://github.com/haplesshero13/lcc-lc3).
 
+##Recent Changes
+####May 2012
+
+*Avery Yen*
+
+Modified Makefile.def and configure to automatically install to `~/.lc3`. Also, `make install` now only installs executables. This is because having documents like a Makefile and a README in your executable path is a Bad Idea. The Makefile, README, and other documents previously installed by `make install` already live in the source directory. There doesn't seem to be any reason to make them live in two places.
+
+Additionally, the lc3os and symbol tables now get installed to `~/.lc3/lc3os/`. This prevents them from being in the executable path, once again. lc3sim.c was modified to reflect this change.
 
 ## Description of Contents
 
