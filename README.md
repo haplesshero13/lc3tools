@@ -2,8 +2,8 @@ LC3 Tools
 =========
 This is a cleaned-up version of the LC-3 tools which has been modified slightly to install to `~/.lc3`, so it can be used alongside the [LCC-LC3 C Compiler](https://github.com/haplesshero13/lcc-lc3).
 
-##Recent Changes
-####May 2012
+## Recent Changes
+#### May 2012
 
 *Avery Yen*
 
@@ -59,20 +59,20 @@ had time to investigate.
 
 ## Installation Instructions
 
-###Windows
+### Windows
 * Install Cygwin, making sure you have gcc, flex, and wish, as well as uname, rm, cp, mkdir, and chmod
 * Now follow the general UNIX install
 
-###Mac OS X 10.5+
+### Mac OS X 10.5+
 * Install Xcode and the Xcode Developer Tools/Command Line Tools
 * Check that you have gcc by typing `gcc --version`. If you get a message similar to `i686-apple-darwin11-llvm-gcc-4.2 (GCC) 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.9.00)` then you are all set.
 * Now follow the general UNIX install
 
-###Linux
+### Linux
 * Install gcc, flex, and wish, using apt-get, yum, or whatever package manager your Linux system uses.
 * Now follow the general UNIX install
 
-###General UNIX
+### General UNIX
 The LC-3 tools package is designed to work as either a personal or 
 administrative installation on various flavors of Unix, including
 Windows NT-based systems with appropriate support (e.g., Cygwin).
